@@ -655,6 +655,7 @@ class _UserManagementScreenState extends State<UserManagementScreen> {
       context: context,
       builder: (context) => AlertDialog(
         title: Text('${action == 'activate' ? 'Activate' : 'Deactivate'} User'),
+        // ignore: unnecessary_brace_in_string_interps
         content: Text('Are you sure you want to ${action} ${user['name']}?'),
         actions: [
           TextButton(

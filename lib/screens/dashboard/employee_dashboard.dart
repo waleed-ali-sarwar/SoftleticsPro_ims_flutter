@@ -343,6 +343,7 @@ class _EmployeeDashboardState extends State<EmployeeDashboard> {
                       CircularProgressIndicator(
                         value: progressPercentage,
                         strokeWidth: 12,
+                        // ignore: deprecated_member_use
                         backgroundColor: AppTheme.textHint.withOpacity(0.3),
                         valueColor: AlwaysStoppedAnimation<Color>(
                           AppTheme.primaryColor,

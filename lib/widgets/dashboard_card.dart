@@ -28,23 +28,19 @@ class DashboardCard extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(icon, color: color, size: 24),
                   Container(
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       color: color.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Icon(icon, color: color, size: 16),
+                    child: Icon(icon, color: color, size: 12),
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
               Text(
                 value,
                 style: Theme.of(context).textTheme.headlineSmall?.copyWith(

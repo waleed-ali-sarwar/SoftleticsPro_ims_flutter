@@ -39,10 +39,10 @@ class ProjectOverviewCard extends StatelessWidget {
                     PieChartSectionData(
                       color: AppTheme.warningColor,
                       value: pendingProjects.toDouble(),
-                      title: 'Pending\n$pendingProjects',
+                      title: 'Pending\n$pendingProjects%',
                       radius: 50,
                       titleStyle: const TextStyle(
-                        fontSize: 12,
+                        fontSize: 10,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
@@ -50,7 +50,7 @@ class ProjectOverviewCard extends StatelessWidget {
                     PieChartSectionData(
                       color: AppTheme.primaryColor,
                       value: inProgressProjects.toDouble(),
-                      title: 'In Progress\n$inProgressProjects',
+                      title: 'In Progress\n$inProgressProjects%',
                       radius: 50,
                       titleStyle: const TextStyle(
                         fontSize: 12,
@@ -61,7 +61,7 @@ class ProjectOverviewCard extends StatelessWidget {
                     PieChartSectionData(
                       color: AppTheme.successColor,
                       value: completedProjects.toDouble(),
-                      title: 'Completed\n$completedProjects',
+                      title: 'Completed\n$completedProjects%',
                       radius: 50,
                       titleStyle: const TextStyle(
                         fontSize: 12,
